@@ -21,8 +21,9 @@ let passwordLength = 16
         function copy() {
             navigator.clipboard.writeText(inputE.value)
         }
-        const copyButtonE = document.querySelector("#copy")
-        copyButtonE.addEventListener("click", copy)
+
+        document.querySelector("#copy").addEventListener("click", copy)
+        document.querySelector(".copyButton").addEventListener("click", copy)
 
 
         generatePassword()
